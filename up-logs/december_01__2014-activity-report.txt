@@ -1,0 +1,3 @@
+Just an example file. File name should look like this:
+
+MONTH_DAY__YEAR-WHATEVER.txt
