@@ -1,15 +1,15 @@
 # Jawbone UP to DayOne
 
-A simple script to store Jawbone UP data into DayOne Journal.
+A simple script to store Jawbone UP data into your DayOne Journal.
 
 ## Usage
 
-Checkout [this post](https://stefanzweifel.io/posts/jawbone-up-to-dayone/) to setup everything up.
+Checkout [this blog post](https://stefanzweifel.io/posts/jawbone-up-to-dayone/) on how to setup the script.
 
 ## Contribution
 
 Just open an issue or pull request. I will look into that.
 
-## License 
+## License
 
 See LICENSE File
