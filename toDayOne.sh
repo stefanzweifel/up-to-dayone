@@ -23,8 +23,11 @@ for D in *; do
     DAY=$( echo $D | cut -d'_' -f 2;)
     YEAR=$( echo $DATE | tail -c 5;)
 
+    # Get fullpath of dayone binary
+    COMMAND=$( which dayone;)
+
     # Add to Dayone
-    dayone -d="$MONTH/$DAY/$YEAR" new < $D
+    $COMMAND -d="$MONTH/$DAY/$YEAR" new < $D
 
     # Remove File from Disk
     rm $D
