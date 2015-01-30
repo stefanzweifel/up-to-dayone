@@ -14,7 +14,16 @@ LOGDIR='up-logs/'
 
 cd $LOGDIR;
 
+echo "Log Folder:" $(pwd);
+
 for D in *; do
+
+    # Check if any logs are available. If not, scripts ends
+    if [[ $D == '*' ]]
+        then
+        echo "No logs found. Script ends.";
+        exit;
+    fi
 
     echo "Read file:" $D;
 
