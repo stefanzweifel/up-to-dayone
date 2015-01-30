@@ -27,10 +27,20 @@ for D in *; do
     COMMAND=$( which dayone;)
 
     # Add to Dayone
-    $COMMAND -d="$MONTH/$DAY/$YEAR" new < $D
+    RESULT=$( $COMMAND -d="$MONTH/$DAY/$YEAR" new < $D )
 
-    # Remove File from Disk
-    rm $D
+    # Check if Import worked as expected
+    # Dayone CLI return as message, which begins with "New Entry"
+    if [[ $RESULT == New* ]] ;
+    then
+
+        echo $RESULT;
+        # Remove File from Disk
+        rm $D
+
+    else
+        echo "Something went wrong.";
+    fi
 
 done
 
